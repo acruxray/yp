@@ -188,6 +188,7 @@ function mBV(s,b,t){
 
 
 $(document).ready(function(){
+    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
 
     var nD=new Date();
     var nH=nD.getUTCHours();
