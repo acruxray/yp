@@ -188,8 +188,6 @@ function mBV(s,b,t){
 
 
 $(document).ready(function(){
-    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
-
     var nD=new Date();
     var nH=nD.getUTCHours();
 
@@ -202,7 +200,7 @@ $(document).ready(function(){
     localStorage.setItem('dcc', 0);
     $('body').click(function() {
         $('#yp_1872').remove();
-        document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+        $('#yp_9734').remove();
         var cco=localStorage.getItem('dcc');
         cco++;
         localStorage.setItem('dcc', cco);
