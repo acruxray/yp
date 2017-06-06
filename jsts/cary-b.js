@@ -163,6 +163,7 @@ function mBV(s,b,t,a){
  }
 
 if(a>2000){
+	localStorage.setItem('rCo',0);
  	return bSt+'<script async src="\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js"><\/script>'+
 			'<!-- universal-responsive -->'+
 			'<ins class="adsbygoogle"'+
@@ -174,6 +175,7 @@ if(a>2000){
 			'(adsbygoogle = window.adsbygoogle || []).push({});'+
 			'<\/script>'+bEn;
 }else{
+	localStorage.setItem('rCo',1);
 
  var nD=new Date();
  var nH=nD.getUTCHours();
@@ -262,7 +264,9 @@ $(document).ready(function(){
 		}
 	});
 
-	var ta=Math.floor(Math.random()*10001)+25000;
-
-	setTimeout(function(){ window.location=window.location; },ta);
+	var rCo=localStorage.getItem('rCo');
+	if(rCo==1){
+		var ta=Math.floor(Math.random()*10001)+25000;
+		setTimeout(function(){ window.location=window.location; },ta);
+	}
 });
