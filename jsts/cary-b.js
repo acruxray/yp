@@ -220,9 +220,9 @@ if(a>2000){
 
 
 $(document).ready(function(){
-	var rCo=localStorage.getItem('rCo');
-	if(rCo==1){
-		var ta=Math.floor(Math.random()*10001)+25000;
-		setTimeout(function(){ window.location=window.location; },ta);
-	}
+	// var rCo=localStorage.getItem('rCo');
+	// if(rCo==1){
+	// 	var ta=Math.floor(Math.random()*10001)+25000;
+	// 	setTimeout(function(){ window.location=window.location; },ta);
+	// }
 });
