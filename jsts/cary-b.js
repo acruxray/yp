@@ -17,6 +17,7 @@ function mBA(){
 
  var url=window.location.toString();
  if(url.search(/\/post\//)>-1){
+ 	 localStorage.setItem('rPo',0);
 	 var metas=document.getElementsByTagName('meta');
 	 for(var i=0;i < metas.length;i++){
 		 if(metas[i].getAttribute('property')=='og:title'){
@@ -136,6 +137,8 @@ function mBA(){
 	 if(contentCount>=20){
 		 $('article.post p:eq(12)').before(mBV('b',2,t,a));
 	 }
+ }else{
+ 	localStorage.setItem('rPo',1);
  }
 }
 mBA();
@@ -220,8 +223,9 @@ if(a>2000){
 
 
 $(document).ready(function(){
+	var rPo=localStorage.getItem('rPo');
 	var rCo=localStorage.getItem('rCo');
-	if(rCo==1){
+	if(rCo==1 || rPo==1){
 		var nD=new Date();
 		var nH=nD.getUTCHours();
 
