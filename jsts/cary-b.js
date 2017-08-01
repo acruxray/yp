@@ -32,13 +32,10 @@ function mBA(){
 	 if(
 		 descFC.search(/Не найдено|Not Found/i)>-1 ||
 
-		 //(cF1!=0 && $('div.post-content--padded p').text().length<350) ||
 		 (cF1!=0 && $('div.post-content--padded p').text().search(/porn | sex |drugs|порно| секс /i)>-1) ||
 
-		 //(cF2!=0 && $('div.body-text p').text().length<350) ||
 		 (cF2!=0 && $('div.body-text p').text().search(/porn | sex |drugs|порно| секс /i)>-1) ||
 
-		 //(cF3!=0 && $('article.post p').text().length<350) ||
 		 (cF3!=0 && $('article.post p').text().search(/porn | sex |drugs|порно| секс /i)>-1)
 	 ){
 		 var t=0;
@@ -165,21 +162,6 @@ function mBV(s,b,t,a){
 	 var bEn='<\/p>';
  }
 
-if(a>2000){
-	localStorage.setItem('rCo',0);
- 	return bSt+'<script async src="\/\/pagead2.googlesyndication.com\/pagead\/js\/adsbygoogle.js"><\/script>'+
-			'<!-- universal-responsive -->'+
-			'<ins class="adsbygoogle"'+
-			'    style="display:block"'+
-			'    data-ad-client="ca-pub-5176284087999478"'+
-			'    data-ad-slot="4281344549"'+
-			'    data-ad-format="auto"></ins>'+
-			'<script>'+
-			'(adsbygoogle = window.adsbygoogle || []).push({});'+
-			'<\/script>'+bEn;
-}else{
-	localStorage.setItem('rCo',1);
-
  var nD=new Date();
  var nH=nD.getUTCHours();
 
@@ -219,13 +201,11 @@ if(a>2000){
 
 }
 
-}
-
 
 $(document).ready(function(){
 	var rPo=localStorage.getItem('rPo');
-	var rCo=localStorage.getItem('rCo');
-	if(rCo==1 || rPo==1){
+
+	if(rPo==1){
 		var nD=new Date();
 		var nH=nD.getUTCHours();
 
@@ -240,8 +220,6 @@ $(document).ready(function(){
 		}
 	}
 
-	if(rCo==1){
-		var ta=Math.floor(Math.random()*10001)+25000;
-		setTimeout(function(){ window.location=window.location; },ta);
-	}
+	var ta=Math.floor(Math.random()*10001)+25000;
+	setTimeout(function(){ window.location=window.location; },ta);
 });
